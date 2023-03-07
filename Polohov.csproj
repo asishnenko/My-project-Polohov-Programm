@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4C3C39E5-8B64-4849-88B2-EBB51917CB39}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Polohov</RootNamespace>
+    <AssemblyName>Polohov</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Users\Администратор\Downloads\microsoft.office.interop.excel\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\WINDOWS\Microsoft.Office.Interop.Word\Microsoft.Office.Interop.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddProd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProd.Designer.cs">
+      <DependentUpon>AddProd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddProd1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProd1.Designer.cs">
+      <DependentUpon>AddProd1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddRab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddRab.Designer.cs">
+      <DependentUpon>AddRab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="changelogpwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changelogpwd.Designer.cs">
+      <DependentUpon>changelogpwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="changepwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changepwd.Designer.cs">
+      <DependentUpon>changepwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckZadanie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckZadanie.Designer.cs">
+      <DependentUpon>CheckZadanie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="checkProdaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="checkProdaja.Designer.cs">
+      <DependentUpon>checkProdaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete.Designer.cs">
+      <DependentUpon>delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Otchet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Otchet.Designer.cs">
+      <DependentUpon>Otchet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Password.Designer.cs">
+      <DependentUpon>Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pasting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pasting.Designer.cs">
+      <DependentUpon>Pasting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Othodi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Othodi.Designer.cs">
+      <DependentUpon>Othodi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prodaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prodaja.Designer.cs">
+      <DependentUpon>Prodaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddProd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddProd1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddProd1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddRab.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddRab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changelogpwd.resx">
+      <DependentUpon>changelogpwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changepwd.resx">
+      <DependentUpon>changepwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckZadanie.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CheckZadanie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="checkProdaja.resx">
+      <DependentUpon>checkProdaja.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Otchet.resx">
+      <DependentUpon>Otchet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Password.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pasting.resx">
+      <DependentUpon>Pasting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Othodi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Othodi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prodaja.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prodaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rabochie.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Rabochie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResetSklad.resx">
+      <DependentUpon>ResetSklad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetPartiya.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SetPartiya.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SostSklad.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SostSklad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Starting.resx">
+      <DependentUpon>Starting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tree.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Tree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Union.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Union.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vhod.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Vhod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zadanie.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>zadanie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zapolnenie.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Zapolnenie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zarplata.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Zarplata.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Rabochie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rabochie.Designer.cs">
+      <DependentUpon>Rabochie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResetSklad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResetSklad.Designer.cs">
+      <DependentUpon>ResetSklad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetPartiya.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetPartiya.Designer.cs">
+      <DependentUpon>SetPartiya.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sklad5DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sklad5DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SostSklad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SostSklad.Designer.cs">
+      <DependentUpon>SostSklad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Starting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Starting.Designer.cs">
+      <DependentUpon>Starting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tree.Designer.cs">
+      <DependentUpon>Tree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Union.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Union.Designer.cs">
+      <DependentUpon>Union.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vhod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vhod.Designer.cs">
+      <DependentUpon>Vhod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zadanie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zadanie.Designer.cs">
+      <DependentUpon>zadanie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zapolnenie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zapolnenie.Designer.cs">
+      <DependentUpon>Zapolnenie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zarplata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zarplata.Designer.cs">
+      <DependentUpon>Zarplata.cs</DependentUpon>
+    </Compile>
+    <None Include="sklad5DataSet.xsc">
+      <DependentUpon>sklad5DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sklad5DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sklad5DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sklad5DataSet.xss">
+      <DependentUpon>sklad5DataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="sklad5.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sklad5_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>sklad5.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
